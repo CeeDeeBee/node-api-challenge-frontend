@@ -14,7 +14,7 @@ const ProjectDetails = () => {
 
 	return (
 		<div className="project-details">
-			<Link to="/">All Projects</Link>
+			<Link to="/">{"<"} All Projects</Link>
 			<h2>{project.name}</h2>
 			<p>{project.description}</p>
 			<p>Completed: {`${project.completed}`}</p>
