@@ -1,0 +1,24 @@
+.App {
+	text-align: center;
+}
+
+.projects-list {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 50%;
+
+	.project-card {
+		margin: 2% 0;
+		border: 3px solid red;
+		border-radius: 10px;
+
+		&.completed {
+			border: 3px solid green;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

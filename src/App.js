@@ -1,13 +1,20 @@
 import React from "react";
+import { Route } from "react-router-dom";
 
 import ProjectList from "./components/ProjectsList";
-import "./App.css";
+import ProjectDetails from "./components/ProjectDetails";
+import "./App.scss";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Projects</h1>
-			<ProjectList />
+			<Route exact path="/">
+				<h1>Projects</h1>
+				<ProjectList />
+			</Route>
+			<Route path="/projects/:id">
+				<ProjectDetails />
+			</Route>
 		</div>
 	);
 }
